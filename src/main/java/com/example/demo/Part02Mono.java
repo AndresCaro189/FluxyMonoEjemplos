@@ -2,26 +2,27 @@ package com.example.demo;
 
 import reactor.core.publisher.Mono;
 
+/**
+ *
+ * @see <a href="https://projectreactor.io/docs/core/release/api/reactor/core/publisher/Mono.html">Mono Javadoc</a>
+ */
 public class Part02Mono {
 
-		// TODO Return  empty Mono
-		Mono<String> emptyMono() {
-			return null;
-		}	
+	// TODO Return  empty Mono
+	public Mono<String> emptyMono() {
+		return null;
+	}
 
-		// TODO Devuelve un Mono que nunca emite ninguna señal.
-		Mono<String> monoWithNoSignal() {
-			return null;
-		}	
 
-		// TODO Devuelve un Mono que contiene un valor "foo"
-		Mono<String> fooMono() {
-			return null;
-		}	
+	public Mono<String> monoWithNoSignal() {
+		return null;
+	}
 
-		// TODO Crea un Mono que emita una IllegalStateException
-		Mono<String> errorMono() {
-			return null;
-		}
-	
+	public Mono<String> fooMono() {
+		return null;
+	}
+
+	public Mono<String> errorMono() {
+		return null;
+	}
 }

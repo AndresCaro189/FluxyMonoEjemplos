@@ -1,19 +1,25 @@
 package com.example.demo;
 
+
+import com.example.demo.domain.User;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+
+/**
+ * Learn how to merge flux.
+ *
+ */
 public class Part05Merge {
 
-		// TODO Fusionar valores de flux1 y flux2 con intercalación
-		Flux<User> mergeFluxWithInterleave(Flux<User> flux1, Flux<User> flux2) {
-			return null;
-		}	
+	public Flux<User> mergeFluxWithInterleave(Flux<User> all, Flux<User> all1) {
+		return null;
+	}
 
-		// TODO Fusionar valores de flux1 y flux2 sin intercalación (valores de flujo1 y luego valores de flujo2)
-		Flux<User> mergeFluxWithNoInterleave(Flux<User> flux1, Flux<User> flux2) {
-			return null;
-		}	
+	public Flux<User> mergeFluxWithNoInterleave(Flux<User> all, Flux<User> all1) {
+		return null;
+	}
 
-		// TODO Cree un flujo que contenga el valor de mono1 y luego el valor de mono2
-		Flux<User> createFluxFromMultipleMono(Mono<User> mono1, Mono<User> mono2) {
-			return null;
-		}
+	public Flux<User> createFluxFromMultipleMono(Mono<User> skylerMono, Mono<User> marieMono) {
+		return null;
+	}
 }
