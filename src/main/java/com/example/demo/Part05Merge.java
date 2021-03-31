@@ -11,15 +11,18 @@ import reactor.core.publisher.Mono;
  */
 public class Part05Merge {
 
-	public Flux<User> mergeFluxWithInterleave(Flux<User> all, Flux<User> all1) {
-		return null;
+	// TODO Fusionar valores de flux1 y flux2 con intercalación
+	public Flux<User> mergeFluxWithInterleave(Flux<User> flux1, Flux<User> flux2) {
+		return Flux.merge(flux1, flux2);
 	}
 
-	public Flux<User> mergeFluxWithNoInterleave(Flux<User> all, Flux<User> all1) {
-		return null;
+	// TODO Fusionar valores de flux1 y flux2 sin intercalación (valores de flujo1 y luego valores de flujo2)
+	public Flux<User> mergeFluxWithNoInterleave(Flux<User> flux1, Flux<User> flux2) {
+		return Flux.mergeSequential(flux1, flux2);
 	}
 
-	public Flux<User> createFluxFromMultipleMono(Mono<User> skylerMono, Mono<User> marieMono) {
-		return null;
+	// TODO Cree un flujo que contenga el valor de mono1 y luego el valor de mono2
+	public Flux<User> createFluxFromMultipleMono(Mono<User> mono1, Mono<User> mono2) {
+		return Flux.concat(mono1, mono2);
 	}
 }
