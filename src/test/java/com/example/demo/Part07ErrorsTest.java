@@ -41,8 +41,6 @@ public class Part07ErrorsTest {
 				.verifyComplete();
 	}
 
-
-
 	@Test
 	public void handleCheckedExceptions() {
 		Flux<User> flux = workshop.capitalizeMany(Flux.just(User.SAUL, User.JESSE));

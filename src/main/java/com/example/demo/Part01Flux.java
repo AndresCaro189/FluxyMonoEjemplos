@@ -23,7 +23,7 @@ public class Part01Flux {
 
 	// TODO Cree un flujo a partir de una lista que contenga 2 valores "foo" y "bar"
 	public Flux<String> fooBarFluxFromList() {
-		return Flux.fromIterable(Arrays.asList("foo", "bar"));
+		return Flux.fromIterable(Arrays.asList("foo", "bar","fob"));
 	}
 
 	// TODO Cree un flujo que emita una IllegalStateException
@@ -33,6 +33,6 @@ public class Part01Flux {
 
 	// TODO Cree un flujo que emita valores crecientes de 0 a 9 cada 100 ms
 	public Flux<Long> counter() {
-		return Flux.interval(Duration.ofMillis(100)).take(10);
+		return Flux.interval(Duration.ofSeconds(1)).take(10);
 	}
 }

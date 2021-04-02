@@ -27,6 +27,7 @@ public class Part04Transform {
 		return flux.flatMap(user -> asyncCapitalizeUser(user));
 	}
 
+
 	Mono<User> asyncCapitalizeUser(User u) {
 		return Mono.just(new User(u.getUsername().toUpperCase(), u.getFirstname().toUpperCase(), u.getLastname().toUpperCase()));
 	}
